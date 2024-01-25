@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0px;
@@ -40,7 +44,16 @@
               primary: "#131318",
               brandcolor: "#FF4240",
               gray: "#424247",
+              gray60: "rgba(19, 19, 24, 0.60)",
+              gray50: "rgba(19, 19, 24, 0.5)",
+              gray20: "rgba(19, 19, 24, 0.20)",
+              gray10: "rgba(19, 19, 24, 0.10)",
               white: "#fff",
+              red: "#FF4240",
+              green: "#49D293",
+              orange: "#FFB546",
+              blue: "#4C8DF1",
+              golden: "#F99808",
             },
           },
         },
@@ -49,8 +62,8 @@
   </head>
   <body>
     <!-- Nav Section -->
-    <nav class="max-w-[1170px] mr-auto ml-auto my-12">
-      <div class="navbar">
+    <nav class="max-w-[1170px] mr-auto ml-auto my-12 sm: w-10/12">
+      <div class="navbar sm: ml-0">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -73,18 +86,14 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="text-4xl font text-primary font-extrabold"
+          <a class="text-4xl font text-primary font-extrabold sm: text-2xl"
             >Hockey<span class="text-brandcolor">’</span>s</a
           >
         </div>
@@ -97,8 +106,8 @@
             <li><a class="font text-base text-gray">Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle mr-4">
+        <div class="navbar-end sm: mr-0">
+          <button class="btn btn-ghost btn-circle mr-4 sm: hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -115,14 +124,544 @@
             </svg>
           </button>
           <button
-            class="font text-xl text-white font-bold bg-brandcolor rounded-lg px-6 py-4"
+            class="font text-xl text-white font-bold bg-brandcolor rounded-lg px-6 py-4 sm:text-lg px-4 py-2"
           >
             Get Ticket
           </button>
         </div>
       </div>
     </nav>
-    <main></main>
-    <footer></footer>
+
+    <!-- Header Section -->
+    <header class="max-w-[1170px] mr-auto ml-auto my-12 sm: w-10/12">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Resources/Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-8 bottom-0 gap-4"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Resources/Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-8 bottom-0 gap-4"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Resources/Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-8 bottom-0 gap-4"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Professional Hockeys Club Section -->
+      <section class="max-w-[1170px] mr-auto ml-auto my-12 mb-24 sm: w-10/12">
+        <hr class="border-dashed border-gray20 mb-8" />
+
+        <h3
+          class="font text-4xl text-primary font-extrabold text-center mb-; max-sm:text-2xl"
+        >
+          Professional Hockeys Club
+        </h3>
+        <p
+          class="font text-base text-gray60 font-medium text-center max-w-[610px] mr-auto ml-auto mb-8 sm:text-sm"
+        >
+          Explore elite Professional Hockey Clubs with top-notch stats,
+          thrilling results, and exclusive insights on Hockey's, your ultimate
+          destination for hockey excellence.
+        </p>
+
+        <hr class="border-dashed border-gray20 mb-12" />
+
+        <div
+          class="flex justify-center gap-40 flex-wrap; max-sm:flex-col gap-6"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <div
+              class="radial-progress text-red mb-6"
+              style="--value: 87; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="font text-3xl text-primary font-extrabold">87%</span>
+            </div>
+            <h6 class="font text-xl text-primary font-semibold text-center">
+              Prayer Facility
+            </h6>
+            <p class="font text-base text-gray60 font-normal text-center">
+              Spiritual empowerment for peak performance.
+            </p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <div
+              class="radial-progress text-green mb-6"
+              style="--value: 95; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="font text-3xl text-primary font-extrabold">95%</span>
+            </div>
+            <h6 class="font text-xl text-primary font-semibold text-center">
+              Experienced Coach
+            </h6>
+            <p class="font text-base text-gray60 font-normal text-center">
+              Guided excellence by seasoned coaching staff.
+            </p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <div
+              class="radial-progress text-orange mb-6"
+              style="--value: 90; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="font text-3xl text-primary font-extrabold">90%</span>
+            </div>
+            <h6 class="font text-xl text-primary font-semibold text-center">
+              Senior Player
+            </h6>
+            <p class="font text-base text-gray60 font-normal text-center">
+              Team strength through seasoned expertise.
+            </p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <div
+              class="radial-progress text-blue mb-6"
+              style="--value: 80; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="font text-3xl text-primary font-extrabold">80%</span>
+            </div>
+            <h6 class="font text-xl text-primary font-semibold text-center">
+              Training Ground
+            </h6>
+            <p class="font text-base text-gray60 font-normal text-center">
+              State-of-the-art facilities for peak performance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Sections Section -->
+      <section class="max-w-[1170px] mr-auto ml-auto my-12 mb-24 sm: w-10/12">
+        <hr class="border-dashed border-gray20 mb-8 sm:mb-6" />
+
+        <h3
+          class="font text-4xl text-primary font-extrabold text-center mb-6; max-sm: text-2xl mb-4"
+        >
+          Program Sections
+        </h3>
+        <p
+          class="font text-base text-gray60 font-medium text-center max-w-[610px] mr-auto ml-auto mb-8; sm: text-sm mb-6"
+        >
+          Explore tailored programs for all ages—Junior, Teenager, and
+          Professional. Elevate your hockey journey with specialized training
+          and development opportunities.
+        </p>
+
+        <hr class="border-dashed border-gray20 mb-12 max-sm:mb-6" />
+
+        <div class="grid grid-cols-2 gap-6 max-sm:flex flex-col">
+          <div
+            style="
+              border-radius: 16px;
+              box-shadow: -150px 150px 250px 250px rgba(0, 0, 0, 0.4) inset;
+              background-image: url('Resources/Images/2.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+            class="flex flex-col justify-end items-start"
+          >
+            <h6
+              class="font text-3xl text-white font-extrabold mt-24 mb-4 ml-10 max-sm:text-xl mt-6 ml-6 mb-3"
+            >
+              Junior Program
+            </h6>
+            <p
+              class="font text-base text-white font-medium mb-6 mx-10 max-sm:text-sm ml-6 mr-8 mb-5"
+            >
+              Cultivate a passion for hockey in young enthusiasts through
+              tailored training, fostering skill development, teamwork, and a
+              lifelong love for the sport.
+            </p>
+            <button
+              class="font text-xl text-white font-bold bg-brandcolor rounded-lg px-5 py-2.5 ml-10 mb-10; sm:text-lg px-4 py-2 max-sm:text-lg px-4 py-2 ml-6 mb-6"
+            >
+              Register Now!
+            </button>
+          </div>
+
+          <div
+            style="
+              border-radius: 16px;
+              box-shadow: -150px 150px 250px 250px rgba(0, 0, 0, 0.4) inset;
+              background-image: url('Resources/Images/3.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+            class="flex flex-col justify-end items-start"
+          >
+            <h6
+              class="font text-3xl text-white font-extrabold mt-24 mb-4 ml-10 max-sm:text-xl mt-6 ml-6 mb-3"
+            >
+              Teenager Program
+            </h6>
+            <p
+              class="font text-base text-white font-medium mb-6 mx-10 max-sm:text-sm ml-6 mr-8 mb-5"
+            >
+              Bridge the journey to professionalism by refining skills,
+              instilling discipline, and providing a comprehensive development
+              pathway for aspiring players to reach their full potential.
+            </p>
+            <button
+              class="font text-xl text-white font-bold bg-brandcolor rounded-lg px-5 py-2.5 ml-10 mb-10 sm:text-lg px-4 py-2 max-sm:text-lg px-4 py-2 ml-6 mb-6"
+            >
+              Register Now!
+            </button>
+          </div>
+          <div
+            style="
+              border-radius: 16px;
+              box-shadow: -150px 150px 250px 250px rgba(0, 0, 0, 0.4) inset;
+              background-image: url('Resources/Images/4.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+            class="flex flex-col justify-end items-start col-span-2"
+          >
+            <h6
+              class="font text-3xl text-white font-extrabold mt-52 mb-4 ml-10 max-sm:text-xl mt-6 ml-6 mb-3"
+            >
+              Professional Program
+            </h6>
+            <p
+              class="font text-base text-white font-medium mb-6 mx-10 max-w-[520px] max-sm:text-sm ml-6 mr-8 mb-5"
+            >
+              Propel careers to new heights with advanced training, strategic
+              coaching, and exclusive opportunities. Elevate your game, compete
+              at the highest level, and achieve professional excellence in
+              hockey.
+            </p>
+            <button
+              class="font text-xl text-white font-bold bg-brandcolor rounded-lg px-5 py-2.5 ml-10 mb-10 sm:text-lg px-4 py-2 max-sm:text-lg px-4 py-2 ml-6 mb-6"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our New Products Section -->
+      <section class="max-w-[1170px] mr-auto ml-auto my-12 mb-24 sm: w-10/12">
+        <hr class="border-dashed border-gray20 mb-8 sm:mb-6" />
+
+        <h3
+          class="font text-4xl text-primary font-extrabold text-center mb-6; max-sm: text-2xl mb-4"
+        >
+          Our New Products
+        </h3>
+        <p
+          class="font text-base text-gray60 font-medium text-center max-w-[610px] mr-auto ml-auto mb-8; sm: text-sm mb-6"
+        >
+          Discover premier hockey-related products in our collection—gear,
+          accessories, and essentials. Elevate your game with top-quality items
+          for every enthusiast.
+        </p>
+
+        <hr class="border-dashed border-gray20 mb-12 max-sm:mb-6" />
+
+        <div class="flex flex-wrap gap-6">
+          <div
+            class="flex gap-5 border border-gray10 rounded-2xl py-6 pl-6 max-w-[573px] max-sm:flex-col"
+          >
+            <img
+              class="max-sm:mr-6"
+              src="Resources/Images/5.png"
+              alt="Red jacket"
+            />
+            <div>
+              <div class="flex mb-3">
+                <i class="bx bxs-star text-golden bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">5.0</p>
+                <i class="bx bx-show text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">20</p>
+                <i class="bx bx-heart text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium">200</p>
+              </div>
+              <h6 class="font text-primary text-xl font-extrabold mb-3">
+                Red Hockey Jacket
+              </h6>
+              <p
+                class="font text-gray60 text-base font-medium mb-4 max-sm:mr-6"
+              >
+                Sleek, durable jacket for discerning hockey enthusiasts with
+                premium style.
+              </p>
+              <div class="flex">
+                <p class="font text-red text-lg font-extrabold mr-5">
+                  Price - $22.00
+                </p>
+                <i class="bx bx-cart-alt text-gray50 bx-sm mr-2"></i>
+                <p class="font text-gray50 text-base font-medium">
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-5 border border-gray10 rounded-2xl py-6 pl-6 max-w-[573px] max-sm:flex-col"
+          >
+            <img
+              class="max-sm:mr-6"
+              src="Resources/Images/5.png"
+              alt="Red jacket"
+            />
+            <div>
+              <div class="flex mb-3">
+                <i class="bx bxs-star text-golden bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">5.0</p>
+                <i class="bx bx-show text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">20</p>
+                <i class="bx bx-heart text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium">200</p>
+              </div>
+              <h6 class="font text-primary text-xl font-extrabold mb-3">
+                Red Hockey Jacket
+              </h6>
+              <p
+                class="font text-gray60 text-base font-medium mb-4 max-sm:mr-6"
+              >
+                Sleek, durable jacket for discerning hockey enthusiasts with
+                premium style.
+              </p>
+              <div class="flex">
+                <p class="font text-red text-lg font-extrabold mr-5">
+                  Price - $22.00
+                </p>
+                <i class="bx bx-cart-alt text-gray50 bx-sm mr-2"></i>
+                <p class="font text-gray50 text-base font-medium">
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-5 border border-gray10 rounded-2xl py-6 pl-6 max-w-[573px] max-sm:flex-col"
+          >
+            <img
+              class="max-sm:mr-6"
+              src="Resources/Images/6.png"
+              alt="Red jacket"
+            />
+            <div>
+              <div class="flex mb-3">
+                <i class="bx bxs-star text-golden bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">5.0</p>
+                <i class="bx bx-show text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">20</p>
+                <i class="bx bx-heart text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium">200</p>
+              </div>
+              <h6 class="font text-primary text-xl font-extrabold mb-3">
+                Red Hockey Jacket
+              </h6>
+              <p
+                class="font text-gray60 text-base font-medium mb-4 max-sm:mr-6"
+              >
+                Sleek, durable jacket for discerning hockey enthusiasts with
+                premium style.
+              </p>
+              <div class="flex">
+                <p class="font text-red text-lg font-extrabold mr-5">
+                  Price - $22.00
+                </p>
+                <i class="bx bx-cart-alt text-gray50 bx-sm mr-2"></i>
+                <p class="font text-gray50 text-base font-medium">
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-5 border border-gray10 rounded-2xl py-6 pl-6 max-w-[573px] max-sm:flex-col"
+          >
+            <img
+              class="max-sm:mr-6"
+              src="Resources/Images/7.png"
+              alt="Red jacket"
+            />
+            <div>
+              <div class="flex mb-3">
+                <i class="bx bxs-star text-golden bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">5.0</p>
+                <i class="bx bx-show text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">20</p>
+                <i class="bx bx-heart text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium">200</p>
+              </div>
+              <h6 class="font text-primary text-xl font-extrabold mb-3">
+                Red Hockey Jacket
+              </h6>
+              <p
+                class="font text-gray60 text-base font-medium mb-4 max-sm:mr-6"
+              >
+                Sleek, durable jacket for discerning hockey enthusiasts with
+                premium style.
+              </p>
+              <div class="flex">
+                <p class="font text-red text-lg font-extrabold mr-5">
+                  Price - $22.00
+                </p>
+                <i class="bx bx-cart-alt text-gray50 bx-sm mr-2"></i>
+                <p class="font text-gray50 text-base font-medium">
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-5 border border-gray10 rounded-2xl py-6 pl-6 max-w-[573px] max-sm:flex-col"
+          >
+            <img
+              class="max-sm:mr-6"
+              src="Resources/Images/8.png"
+              alt="Red jacket"
+            />
+            <div>
+              <div class="flex mb-3">
+                <i class="bx bxs-star text-golden bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">5.0</p>
+                <i class="bx bx-show text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">20</p>
+                <i class="bx bx-heart text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium">200</p>
+              </div>
+              <h6 class="font text-primary text-xl font-extrabold mb-3">
+                Red Hockey Jacket
+              </h6>
+              <p
+                class="font text-gray60 text-base font-medium mb-4 max-sm:mr-6"
+              >
+                Sleek, durable jacket for discerning hockey enthusiasts with
+                premium style.
+              </p>
+              <div class="flex">
+                <p class="font text-red text-lg font-extrabold mr-5">
+                  Price - $22.00
+                </p>
+                <i class="bx bx-cart-alt text-gray50 bx-sm mr-2"></i>
+                <p class="font text-gray50 text-base font-medium">
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex gap-5 border border-gray10 rounded-2xl py-6 pl-6 max-w-[573px] max-sm:flex-col"
+          >
+            <img
+              class="max-sm:mr-6"
+              src="Resources/Images/9.png"
+              alt="Red jacket"
+            />
+            <div>
+              <div class="flex mb-3">
+                <i class="bx bxs-star text-golden bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">5.0</p>
+                <i class="bx bx-show text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium mr-4">20</p>
+                <i class="bx bx-heart text-gray60 bx-sm mr-2"></i>
+                <p class="font text-base text-gray50 font-medium">200</p>
+              </div>
+              <h6 class="font text-primary text-xl font-extrabold mb-3">
+                Red Hockey Jacket
+              </h6>
+              <p
+                class="font text-gray60 text-base font-medium mb-4 max-sm:mr-6"
+              >
+                Sleek, durable jacket for discerning hockey enthusiasts with
+                premium style.
+              </p>
+              <div class="flex">
+                <p class="font text-red text-lg font-extrabold mr-5">
+                  Price - $22.00
+                </p>
+                <i class="bx bx-cart-alt text-gray50 bx-sm mr-2"></i>
+                <p class="font text-gray50 text-base font-medium">
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get in touch section -->
+      <section class="max-w-[1170px] mr-auto ml-auto my-12 mb-24 sm: w-10/12">
+        <hr class="border-dashed border-gray20 mb-8" />
+
+        <h3
+          class="font text-4xl text-primary font-extrabold text-center mb-; max-sm:text-2xl"
+        >
+          Get In Touch
+        </h3>
+        <p
+          class="font text-base text-gray60 font-medium text-center max-w-[610px] mr-auto ml-auto mb-8 sm:text-sm"
+        >
+          Connect with us effortlessly for inquiries, valuable feedback,
+          collaboration opportunities, or any hockey-related discussion. Your
+          engagement enriches our hockey community.
+        </p>
+
+        <hr class="border-dashed border-gray20 mb-12" />
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer p-10 bg-primary text-base-content flex justify-center gap-34; max-sm:flex-col items-start gap-8">
+      <aside>
+        <h3 class="font text-white text-3xl font-extrabold">Get In Touch</h3>
+        <p class="max-w-[346px] font text-neutral-400 text-base font-medium">Explore the world of hockey with our premium products, exclusive programs, and in-depth stats. Join our community. Connect, play, and thrive with us. Your journey starts here.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title text-white">Company</h6>
+        <a class="link link-hover text-white text-white">About us</a>
+        <a class="link link-hover text-white">Leadership</a>
+        <a class="link link-hover text-white">Careers</a>
+        <a class="link link-hover text-white">News & Article</a>
+        <a class="link link-hover text-white">Legal Notice</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title text-white">Support</h6>
+        <a class="link link-hover text-white">Help Center</a>
+        <a class="link link-hover text-white">FAQ</a>
+        <a class="link link-hover text-white">Ticket Support</a>
+        <a class="link link-hover text-white">Contact us/a>
+      </nav>
+      <nav>
+        <h6 class="footer-title text-white">Services</h6>
+        <a class="link link-hover text-white">Academy</a>
+        <a class="link link-hover text-white">Group Lesson</a>
+        <a class="link link-hover text-white">Private Lesson</a>
+        <a class="link link-hover text-white">Hockys for kids</a>
+        <a class="link link-hover text-white">Hockeys for adults</a>
+      </nav>
+    </footer>
   </body>
 </html>
